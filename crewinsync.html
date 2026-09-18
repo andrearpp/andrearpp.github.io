@@ -179,7 +179,138 @@ body{background:var(--bg);color:var(--text)}
  .geometry-section::before{left:-125px}.geometry-section::after{right:-105px}.page-hero::after{right:-75px}
 }
 </style>
-</head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html" aria-current="page">Work</a><a href="smaller-projects.html">Smaller projects</a><a href="earlier-work.html">Earlier work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main><section class="page-hero"><div class="container"><div class="eyebrow">CrewInSync · Startup product design</div><h1>CrewInSync — Redesigning a startup product in 50 hours</h1><div class="page-intro"><p>CrewInSync needed a much stronger product experience, but the design effort had to stay realistic for an early-stage startup. The constraint was part of the problem, not something to ignore.</p><div class="meta-list"><span class="tag">AI recruitment</span><span class="tag">~50 hours</span><span class="tag">Design system</span></div></div><div class="case-hero-visual"><span class="placeholder-label">Add hero project image</span></div></div></section><div class="container"><div class="case-layout"><aside class="case-aside"><div class="label">In one sentence</div><p>A deliberately constrained engagement focused on key flows, visual direction and a reusable foundation rather than polishing every possible screen.</p></aside><div class="case-content"><div class="quote">“The challenge was knowing where additional design effort would matter — and where it wouldn’t.”</div><section class="case-section"><h2>The challenge</h2><p>An early-stage product can absorb unlimited design time if every flow is treated as equally important. CrewInSync needed enough improvement to feel coherent and credible while still respecting startup budget and speed.</p></section><section class="case-section"><h2>What I saw</h2><p>The highest-value work was concentrated in a small number of areas: the core team-fit experience, the candidate and hiring-manager journeys, and the absence of a reusable visual/component foundation.</p></section><section class="case-section"><h2>What I decided</h2><p>I prioritised the product moments that shaped understanding and trust, then stopped where extra refinement would produce diminishing returns. The goal was not a perfect redesign. It was maximum product impact for the available design investment.</p></section><section class="case-section"><h2>What I created</h2><p>In around 50 hours I redesigned key flows, established a new visual direction and delivered a reusable design system. The product included team profiles, candidate profiles, AI “Team fit” interviews, role templates and live roles, with Figma acting as the source of truth.</p></section><section class="case-section"><h2>What changed</h2><p>The team was left with both a clearer experience and a component system they could continue using. That mattered more than creating a larger volume of one-off screens that would immediately need more design support.</p></section><div class="evidence-grid"><div class="evidence wide"><span class="placeholder-label">Add strongest project visual / architecture view</span></div><div class="evidence"><span class="placeholder-label">Add flow, map or before/after</span></div><div class="evidence"><span class="placeholder-label">Add components or supporting evidence</span></div></div><a class="next-project" href="drawdown.html"><div><div class="small">Next</div><h3>Drawdown — Designing what happens after KiwiSaver</h3></div><div>→</div></a></div></div></div></main><footer class="footer"><div class="container footer-inner"><div><h2>Make digital experiences clearer.</h2><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta">Portfolio prototype<br>Project imagery to be added</div></div></footer></div><script>
+
+<style id="crewinsync-imagery">
+.case-hero-visual{
+  height:auto;
+  min-height:0;
+  background:#eeeaf6;
+  padding:0;
+  border:none;
+  overflow:hidden;
+}
+.case-hero-visual::before,.case-hero-visual::after{display:none}
+.case-hero-visual img{width:100%;height:auto;display:block}
+
+.visual-block{margin:26px 0 70px}
+.visual-block figure{margin:0}
+.visual-block img{
+  width:100%;
+  height:auto;
+  display:block;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#fff;
+}
+.visual-caption{
+  margin-top:12px;
+  display:flex;
+  justify-content:space-between;
+  gap:24px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+.visual-caption strong{color:var(--text);font-weight:700}
+.before-grid,.focus-grid{
+  display:grid;
+  gap:14px;
+  margin:26px 0 70px;
+}
+.before-grid{grid-template-columns:1fr 1fr}
+.focus-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.screen-frame{
+  margin:0;
+  padding:14px;
+  background:#f0efe9;
+  border:1px solid var(--line);
+  border-radius:20px;
+}
+.screen-frame img{
+  width:100%;
+  display:block;
+  border-radius:12px;
+  border:1px solid rgba(17,17,17,.07);
+  background:#fff;
+}
+.screen-frame.tall img{
+  aspect-ratio:1.2/1;
+  object-fit:cover;
+  object-position:top;
+}
+.screen-frame.old{background:#f7f3df}
+.screen-frame.redesign{background:#f1edf8}
+.screen-frame figcaption{
+  padding:12px 2px 2px;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.45;
+}
+.screen-frame figcaption strong{display:block;color:var(--text);margin-bottom:3px;font-size:14px}
+.outcome-callout{
+  margin:8px 0 70px;
+  padding:26px 28px;
+  border-radius:18px;
+  background:#f1edf8;
+  border:1px solid #ded5f0;
+}
+.outcome-callout p{margin:0!important;font-size:17px!important;line-height:1.6!important;color:#4f4368!important}
+@media(max-width:800px){
+  .before-grid,.focus-grid{grid-template-columns:1fr}
+  .visual-caption{display:block}
+  .visual-caption span{display:block;margin-top:5px}
+}
+</style>
+
+</head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html" aria-current="page">Work</a><a href="smaller-projects.html">Smaller projects</a><a href="earlier-work.html">Earlier work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main><section class="page-hero"><div class="container"><div class="eyebrow">CrewInSync · Startup product design</div><h1>CrewInSync — Redesigning a startup product in 50 hours</h1><div class="page-intro"><p>CrewInSync needed a much stronger product experience, but the design effort had to stay realistic for an early-stage startup. The constraint was part of the problem, not something to ignore.</p><div class="meta-list"><span class="tag">AI recruitment</span><span class="tag">~50 hours</span><span class="tag">Design system</span></div></div><div class="case-hero-visual"><img src="assets/crewinsync/hero-editorial.png" alt="CrewInSync editorial hero showing the redesigned hiring manager experience and product direction"></div></div></section><div class="container"><div class="case-layout"><aside class="case-aside"><div class="label">In one sentence</div><p>A deliberately constrained engagement focused on key flows, visual direction and a reusable foundation rather than polishing every possible screen.</p></aside><div class="case-content"><div class="quote">“The challenge was knowing where additional design effort would matter — and where it wouldn’t.”</div><section class="case-section"><h2>The challenge</h2><p>An early-stage product can absorb unlimited design time if every flow is treated as equally important. CrewInSync needed enough improvement to feel coherent and credible while still respecting startup budget and speed.</p></section>
+<section class="case-section">
+  <h2>What I inherited</h2>
+  <p>The product already had substantial functionality, but the experience was visually dense and fragmented. The redesign needed to make the product easier to scan and understand without spending startup time rebuilding everything.</p>
+</section>
+<div class="before-grid">
+  <figure class="screen-frame old tall">
+    <img src="assets/crewinsync/old-dashboard.png" alt="Earlier CrewInSync candidate dashboard">
+    <figcaption><strong>Earlier product direction</strong>The candidate dashboard exposed a lot at once and relied heavily on generic panels and system styling.</figcaption>
+  </figure>
+  <figure class="screen-frame old tall">
+    <img src="assets/crewinsync/old-analysis.png" alt="Earlier CrewInSync interview analysis screen">
+    <figcaption><strong>Earlier product direction</strong>Interview analysis was information-rich, but hierarchy and scanability were difficult at a glance.</figcaption>
+  </figure>
+</div><section class="case-section"><h2>What I saw</h2><p>The highest-value work was concentrated in a small number of moments: setting up a role, defining what matters to the team, interviewing candidates and reviewing applications. Those moments also gave me enough surface area to establish a visual system the rest of the product could inherit.</p></section><section class="case-section"><h2>What I decided</h2><p>I prioritised the product moments that shaped understanding and trust, then stopped where extra refinement would produce diminishing returns. The goal was not a perfect redesign. It was maximum product impact for the available design investment.</p></section>
+<div class="focus-grid">
+  <figure class="screen-frame redesign tall">
+    <img src="assets/crewinsync/create-first-job.png" alt="Redesigned CrewInSync create first job screen">
+    <figcaption><strong>Make the path obvious</strong>Turn a large setup task into a short sequence with clear expectations.</figcaption>
+  </figure>
+  <figure class="screen-frame redesign tall">
+    <img src="assets/crewinsync/team-profile.png" alt="Redesigned CrewInSync team profile screen">
+    <figcaption><strong>Make the model understandable</strong>Translate team signals into a profile people can quickly interpret.</figcaption>
+  </figure>
+  <figure class="screen-frame redesign tall">
+    <img src="assets/crewinsync/candidate-interview.png" alt="Redesigned CrewInSync candidate interview screen">
+    <figcaption><strong>Make AI feel guided</strong>Give the interview structure, context and practical prompts without making the interface feel technical.</figcaption>
+  </figure>
+</div><section class="case-section"><h2>What I created</h2><p>In around 50 hours I redesigned the key hiring-manager and candidate flows, established a clearer visual direction and created a reusable component foundation. Figma became the source of truth for the experience, patterns and states the startup could continue building from.</p></section><section class="case-section"><h2>What changed</h2><p>The team was left with both a clearer experience and a component system they could continue using. That mattered more than creating a larger volume of one-off screens that would immediately need more design support.</p></section>
+<div class="visual-block">
+  <figure>
+    <img src="assets/crewinsync/applications.png" alt="Redesigned CrewInSync live job applications screen">
+    <figcaption class="visual-caption">
+      <strong>One visual language across the working product</strong>
+      <span>Clearer hierarchy, reusable status patterns and a faster way to scan candidate fit and progress.</span>
+    </figcaption>
+  </figure>
+</div>
+<div class="visual-block">
+  <figure>
+    <img src="assets/crewinsync/role-details.png" alt="Redesigned CrewInSync role details screen">
+    <figcaption class="visual-caption">
+      <strong>Structured without feeling heavy</strong>
+      <span>The role setup keeps a large amount of information manageable through grouping, imported content and progressive steps.</span>
+    </figcaption>
+  </figure>
+</div>
+<div class="outcome-callout"><p>The outcome was not “every screen redesigned.” It was a product that had a clearer direction, a stronger set of core journeys and a reusable visual system the team could continue applying after my 50-hour engagement.</p></div>
+<a class="next-project" href="drawdown.html"><div><div class="small">Next</div><h3>Drawdown — Designing what happens after KiwiSaver</h3></div><div>→</div></a></div></div></div></main><footer class="footer"><div class="container footer-inner"><div><h2>Make digital experiences clearer.</h2><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta">Portfolio · Selected work</div></div></footer></div><script>
 const menu = document.querySelector('.menu-btn');
 const links = document.querySelector('.nav-links');
 if(menu && links){menu.addEventListener('click',()=>links.classList.toggle('open'));}
