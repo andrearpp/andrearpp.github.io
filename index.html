@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Andrea: Senior Product / UX Designer portfolio"><title>Andrea: Senior Product / UX Designer</title><link rel="icon" href="favicon.svg"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Senior Product / UX Designer working across product strategy, UX/UI, responsive web and mobile, design systems, accessibility, research and delivery."><title>Andrea | Senior Product / UX Designer in New Zealand</title><link rel="icon" href="favicon.svg"><style>
 :root{
   --bg:#f7f7f4;
   --surface:#ffffff;
@@ -288,7 +288,35 @@ body{background:var(--bg);color:var(--text)}
 }
 
 </style>
-</head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html" aria-current="page">Andrea</a><nav class="nav-links"><a href="index.html" aria-current="page">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main>
+<link rel="canonical" href="https://andrearpp.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Andrea | Senior Product / UX Designer in New Zealand">
+<meta property="og:description" content="Senior Product / UX Designer working across product strategy, UX/UI, responsive web and mobile, design systems, accessibility, research and delivery.">
+<meta property="og:url" content="https://andrearpp.github.io/">
+<meta name="twitter:card" content="summary">
+
+/* Basic keyboard accessibility */
+.skip-link{
+  position:absolute;
+  left:16px;
+  top:-60px;
+  z-index:9999;
+  padding:10px 14px;
+  background:#111;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+}
+.skip-link:focus{top:16px}
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid #1b63d8;
+  outline-offset:4px;
+  border-radius:6px;
+}
+
+</style>
+</head><body><a class="skip-link" href="#main-content">Skip to content</a><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html" aria-current="page">Andrea</a><nav class="nav-links"><a href="index.html" aria-current="page">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">Menu</button></div></header><main id="main-content">
 <section class="hero"><div class="container"><div class="eyebrow">Senior Product / UX Designer · New Zealand</div><h1>I design and improve digital products: from focused fixes to bigger systems.</h1><div class="hero-copy"><p>I work across product strategy, UX and UI: from audits and focused redesigns to responsive products, design systems and complex platforms. I bring research, accessibility and delivery into the work so solutions are clear now and flexible enough to evolve.</p><div class="hero-actions"><a class="btn primary" href="work.html">View selected work</a><a class="btn" href="about.html">About me</a></div></div></div></section>
 
 <section class="section" id="what-i-do"><div class="container">
@@ -341,9 +369,9 @@ body{background:var(--bg);color:var(--text)}
 <a class="project-card" href="crewinsync.html"><div class="project-visual project-visual-image"><img src="assets/crewinsync/hero-editorial.png" alt="CrewInSync editorial hero showing the redesigned hiring experience"></div><div class="project-body"><div class="project-kicker"><span class="tag">Startup</span><span class="tag">Design system</span></div><h3>CrewInSync: Redesigning an AI recruitment product in 50 hours</h3><p>Using about 50 hours to improve the main AI product flows, visual direction and design system.</p><span class="project-link">Read case study →</span></div></a>
 <a class="project-card" href="drawdown.html"><div class="project-visual project-visual-image"><img src="assets/drawdown/hero-editorial.png" alt="Drawdown retirement strategy concept showing income, buckets and plan views"></div><div class="project-body"><div class="project-kicker"><span class="tag">Product strategy</span><span class="tag">Retirement</span></div><h3>Drawdown: Designing what happens after KiwiSaver</h3><p>Challenging the assumption that retirement needed another calculator and exploring a more useful ongoing experience.</p><span class="project-link">Read case study →</span></div></a>
 </div></div></section>
-<section class="section"><div class="container"><a class="strip-block light" href="work.html"><div><div class="eyebrow">All work</div><h3>Product redesigns, focused improvements and earlier work: together.</h3></div><div><p>One place to scan the full range of projects, from current flagship case studies to smaller product work and earlier experience.</p><span class="strip-link">View all work →</span></div></a></div></section></main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a></div></div></footer></div><script>
+<section class="section"><div class="container"><a class="strip-block light" href="work.html"><div><div class="eyebrow">All work</div><h3>Product redesigns, focused improvements and earlier work: together.</h3></div><div><p>One place to scan the full range of projects, from current flagship case studies to smaller product work and earlier experience.</p><span class="strip-link">View all work →</span></div></a></div></section></main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a> · <a href="https://nz.linkedin.com/in/andrearpardo" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="assets/Andrea-Pardo-CV.pdf" download>CV</a></div></div></footer></div><script>
 const menu = document.querySelector('.menu-btn');
 const links = document.querySelector('.nav-links');
-if(menu && links){menu.addEventListener('click',()=>links.classList.toggle('open'));}
+if(menu && links){menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu');});}
 
 </script></body></html>

@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Andrea: Senior Product / UX Designer portfolio"><title>Adviser Hub: Modernising a 1997 investment platform: Andrea</title><link rel="icon" href="favicon.svg"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A product design case study about understanding and redesigning a complex financial platform dating back to 1997."><title>Adviser Hub: Modernising a 1997 Platform | Andrea</title><link rel="icon" href="favicon.svg"><style>
 :root{
   --bg:#f7f7f4;
   --surface:#ffffff;
@@ -264,7 +264,35 @@ body{background:var(--bg);color:var(--text)}
 }
 
 </style>
-</head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main>
+<link rel="canonical" href="https://andrearpp.github.io/adviser-hub.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Adviser Hub: Modernising a 1997 Platform | Andrea">
+<meta property="og:description" content="A product design case study about understanding and redesigning a complex financial platform dating back to 1997.">
+<meta property="og:url" content="https://andrearpp.github.io/adviser-hub.html">
+<meta name="twitter:card" content="summary">
+
+/* Basic keyboard accessibility */
+.skip-link{
+  position:absolute;
+  left:16px;
+  top:-60px;
+  z-index:9999;
+  padding:10px 14px;
+  background:#111;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+}
+.skip-link:focus{top:16px}
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid #1b63d8;
+  outline-offset:4px;
+  border-radius:6px;
+}
+
+</style>
+</head><body><a class="skip-link" href="#main-content">Skip to content</a><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">Menu</button></div></header><main id="main-content">
 <section class="page-hero"><div class="container">
 <div class="eyebrow">Adviser Hub · Legacy modernisation</div>
 <h1>Adviser Hub: Modernising a 1997 investment platform</h1>
@@ -319,9 +347,9 @@ body{background:var(--bg);color:var(--text)}
 
 <a class="next-project" href="crewinsync.html"><div><div class="small">Next</div><h3>CrewInSync: Redesigning an AI recruitment product in 50 hours</h3></div><div>→</div></a>
 </div></div></div>
-</main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a></div></div></footer></div><script>
+</main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a> · <a href="https://nz.linkedin.com/in/andrearpardo" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="assets/Andrea-Pardo-CV.pdf" download>CV</a></div></div></footer></div><script>
 const menu = document.querySelector('.menu-btn');
 const links = document.querySelector('.nav-links');
-if(menu && links){menu.addEventListener('click',()=>links.classList.toggle('open'));}
+if(menu && links){menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu');});}
 
 </script></body></html>

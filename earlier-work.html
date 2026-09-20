@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Andrea: Senior Product / UX Designer portfolio"><title>Earlier work: Andrea</title><link rel="icon" href="favicon.svg"><style>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Earlier UX, UI, research and service design work across government, councils, finance, education and ecommerce."><title>Earlier Work | Andrea</title><link rel="icon" href="favicon.svg"><style>
 :root{
   --bg:#f7f7f4;
   --surface:#ffffff;
@@ -198,9 +198,37 @@ body{background:var(--bg);color:var(--text)}
   .earlier-card-copy{padding:22px}
 }
 </style>
-</head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main><section class="page-hero"><div class="container"><div class="eyebrow">Earlier work</div><h1>This work now lives together on one page.</h1><div class="page-intro"><p>I combined the portfolio work into a single view so nothing useful is hidden behind separate navigation.</p><div><a class="btn primary" href="work.html#earlier">View earlier work →</a></div></div></div></section></main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a></div></div></footer></div><script>
+<link rel="canonical" href="https://andrearpp.github.io/work.html#earlier">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Earlier Work | Andrea">
+<meta property="og:description" content="Earlier UX, UI, research and service design work across government, councils, finance, education and ecommerce.">
+<meta property="og:url" content="https://andrearpp.github.io/work.html#earlier">
+<meta name="twitter:card" content="summary">
+
+/* Basic keyboard accessibility */
+.skip-link{
+  position:absolute;
+  left:16px;
+  top:-60px;
+  z-index:9999;
+  padding:10px 14px;
+  background:#111;
+  color:#fff;
+  border-radius:8px;
+  text-decoration:none;
+}
+.skip-link:focus{top:16px}
+a:focus-visible,
+button:focus-visible{
+  outline:3px solid #1b63d8;
+  outline-offset:4px;
+  border-radius:6px;
+}
+
+</style>
+</head><body><a class="skip-link" href="#main-content">Skip to content</a><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html">Andrea</a><nav class="nav-links"><a href="index.html">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">Menu</button></div></header><main id="main-content"><section class="page-hero"><div class="container"><div class="eyebrow">Earlier work</div><h1>This work now lives together on one page.</h1><div class="page-intro"><p>I combined the portfolio work into a single view so nothing useful is hidden behind separate navigation.</p><div><a class="btn primary" href="work.html#earlier">View earlier work →</a></div></div></div></section></main><footer class="footer"><div class="container footer-inner"><div><p>Senior Product / UX Designer · New Zealand</p></div><div class="footer-meta"><a href="index.html">Home</a> · <a href="work.html">Work</a> · <a href="about.html">About</a> · <a href="https://nz.linkedin.com/in/andrearpardo" target="_blank" rel="noopener noreferrer">LinkedIn</a> · <a href="assets/Andrea-Pardo-CV.pdf" download>CV</a></div></div></footer></div><script>
 const menu = document.querySelector('.menu-btn');
 const links = document.querySelector('.nav-links');
-if(menu && links){menu.addEventListener('click',()=>links.classList.toggle('open'));}
+if(menu && links){menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close menu':'Open menu');});}
 
 </script><script>window.location.replace("work.html#earlier");</script></body></html>
