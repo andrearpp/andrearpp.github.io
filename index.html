@@ -46,6 +46,13 @@ button{font:inherit}
 .section-head h2{font-size:clamp(38px,5vw,62px);line-height:1;letter-spacing:-.05em;margin:0}
 .section-head p{max-width:520px;color:var(--muted);line-height:1.6;margin:0;font-size:16px}
 .principles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+
+.capability-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.capability{border-top:1px solid var(--line);padding:22px 0 8px}
+.capability h3{margin:0 0 10px;font-size:21px;line-height:1.15;letter-spacing:-.025em}
+.capability p{margin:0;color:var(--muted);font-size:15px;line-height:1.55;max-width:360px}
+.capability .mini-tag{display:inline-block;margin-bottom:16px;font-size:11px;font-weight:760;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+
 .principle{min-height:260px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;justify-content:space-between}
 .principle-index{width:38px;height:38px;border-radius:999px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;font-size:13px;font-weight:760}
 .principle h3{font-size:28px;line-height:1.05;letter-spacing:-.035em;margin:30px 0 12px}
@@ -118,7 +125,7 @@ button{font:inherit}
 @media(max-width:800px){
   .container{width:min(calc(100% - 28px),var(--max))}
   .nav{height:68px}.nav-links{display:none;position:absolute;top:68px;left:14px;right:14px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:10px;flex-direction:column;align-items:stretch}.nav-links.open{display:flex}.nav-links a{padding:13px}.menu-btn{display:block}
-  .hero{padding:74px 0 54px}.hero h1,.page-hero h1{letter-spacing:0}.hero-copy,.page-intro{grid-template-columns:1fr;gap:24px}.hero-actions{justify-content:flex-start}.section{padding:62px 0}.section-head{display:block}.section-head p{margin-top:16px}.principles,.work-grid,.collection-grid,.split-strip,.about-grid{grid-template-columns:1fr}.principle{min-height:230px}.project-visual{height:250px}.project-body h3{font-size:28px}.strip-block{min-height:270px}.page-hero{padding:66px 0 38px}.meta-list{justify-content:flex-start}.case-layout{grid-template-columns:1fr;gap:30px;padding:56px 0}.case-aside{position:static;border-bottom:1px solid var(--line);padding-bottom:24px}.evidence-grid{grid-template-columns:1fr}.evidence.wide{grid-column:auto}.next-project{align-items:flex-start;flex-direction:column}.about-grid{gap:36px}.about-side{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:28px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-meta{text-align:left}
+  .hero{padding:74px 0 54px}.hero h1,.page-hero h1{letter-spacing:0}.hero-copy,.page-intro{grid-template-columns:1fr;gap:24px}.hero-actions{justify-content:flex-start}.section{padding:62px 0}.section-head{display:block}.section-head p{margin-top:16px}.principles,.work-grid,.collection-grid,.split-strip,.about-grid,.capability-grid{grid-template-columns:1fr}.principle{min-height:230px}.project-visual{height:250px}.project-body h3{font-size:28px}.strip-block{min-height:270px}.page-hero{padding:66px 0 38px}.meta-list{justify-content:flex-start}.case-layout{grid-template-columns:1fr;gap:30px;padding:56px 0}.case-aside{position:static;border-bottom:1px solid var(--line);padding-bottom:24px}.evidence-grid{grid-template-columns:1fr}.evidence.wide{grid-column:auto}.next-project{align-items:flex-start;flex-direction:column}.about-grid{gap:36px}.about-side{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:28px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-meta{text-align:left}
 }
 
 </style>
@@ -189,7 +196,46 @@ body{background:var(--bg);color:var(--text)}
 .case-hero-image img{width:100%;height:100%;object-fit:cover;display:block}
 </style>
 </head><body><div class="site-shell"><header class="header"><div class="container nav"><a class="brand" href="index.html" aria-current="page">Andrea</a><nav class="nav-links"><a href="index.html" aria-current="page">Home</a><a href="work.html">Work</a><a href="about.html">About</a></nav><button class="menu-btn" aria-label="Open menu">Menu</button></div></header><main>
-<section class="hero"><div class="container"><div class="eyebrow">Senior Product / UX Designer · New Zealand</div><h1>I design and improve digital products — from focused fixes to bigger systems.</h1><div class="hero-copy"><p>Sometimes that means auditing an existing experience. Sometimes it means redesigning a flow, shaping a new feature or untangling a complex product. I work across UX, product design and delivery to make what exists clearer and what comes next easier to build.</p><div class="hero-actions"><a class="btn primary" href="work.html">View selected work</a><a class="btn" href="about.html">About me</a></div></div></div></section>
+<section class="hero"><div class="container"><div class="eyebrow">Senior Product / UX Designer · New Zealand</div><h1>I design and improve digital products — from focused fixes to bigger systems.</h1><div class="hero-copy"><p>I work across product strategy, UX and UI — from audits and focused redesigns to responsive products, design systems and complex platforms. I bring research, accessibility and delivery into the work so solutions are clear now and flexible enough to evolve.</p><div class="hero-actions"><a class="btn primary" href="work.html">View selected work</a><a class="btn" href="about.html">About me</a></div></div></div></section>
+
+<section class="section" id="what-i-do"><div class="container">
+  <div class="section-head">
+    <h2>What I do</h2>
+  </div>
+  <div class="capability-grid">
+    <div class="capability">
+      <span class="mini-tag">01</span>
+      <h3>Product strategy & UX</h3>
+      <p>Frame problems, map journeys and flows, and turn user, business and technical needs into product decisions.</p>
+    </div>
+    <div class="capability">
+      <span class="mini-tag">02</span>
+      <h3>Responsive web & mobile</h3>
+      <p>Design experiences that work across devices, breakpoints and interaction contexts rather than as isolated screens.</p>
+    </div>
+    <div class="capability">
+      <span class="mini-tag">03</span>
+      <h3>Design systems</h3>
+      <p>Create and evolve reusable components, patterns and documentation that improve consistency and make future delivery easier.</p>
+    </div>
+    <div class="capability">
+      <span class="mini-tag">04</span>
+      <h3>Accessibility & inclusive design</h3>
+      <p>Design for readability, interaction states and different ways of using a product, with accessibility considered from the start.</p>
+    </div>
+    <div class="capability">
+      <span class="mini-tag">05</span>
+      <h3>Research & validation</h3>
+      <p>Use interviews, usability testing, prototypes and concept testing to reduce assumptions and improve decisions.</p>
+    </div>
+    <div class="capability">
+      <span class="mini-tag">06</span>
+      <h3>Design through delivery</h3>
+      <p>Work closely with product, engineering and stakeholders on constraints, edge cases, implementation and iteration — including AI-enabled products.</p>
+    </div>
+  </div>
+</div></section>
+
 <section class="section geometry-section"><div class="container"><div class="section-head"><h2>How I work</h2><p>I’m comfortable zooming in or out: auditing a flow, redesigning a journey, or understanding the system behind it.</p></div><div class="principles">
 <div class="principle"><div class="principle-index">01</div><div><h3>Understand the system</h3><p>I don’t redesign something until I understand how it works, what people rely on and where the real complexity sits.</p></div></div>
 <div class="principle"><div class="principle-index">02</div><div><h3>Think beyond the feature</h3><p>I try to solve the underlying problem, not only the requirement in front of me, so the next feature is easier to build.</p></div></div>
