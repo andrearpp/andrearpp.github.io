@@ -152,6 +152,29 @@ button{font:inherit}
   display:block;
 }
 
+
+/* Supporting project evidence */
+.proof-block{margin:12px 0 72px}
+.proof-block .proof-intro{font-size:14px;color:var(--muted);line-height:1.55;margin:0 0 18px}
+.proof-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.proof-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.proof-card{margin:0;background:#f1f4f6;border:1px solid var(--line);border-radius:20px;overflow:hidden}
+.proof-card.wide{grid-column:1/-1}
+.proof-media{min-height:360px;padding:24px;display:grid;place-items:center;background:#f5f7f8}
+.proof-media.mobile{min-height:560px}
+.proof-media.web{min-height:410px}
+.proof-media img{width:100%;height:100%;max-height:560px;object-fit:contain;display:block;margin:auto}
+.proof-card.wide .proof-media img{max-height:620px}
+.proof-caption{padding:18px 20px;background:#fff;border-top:1px solid var(--line)}
+.proof-caption h3{margin:0 0 6px;font-size:17px;letter-spacing:-.02em}
+.proof-caption p{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+@media(max-width:800px){
+  .proof-grid,.proof-grid.three{grid-template-columns:1fr}
+  .proof-card.wide{grid-column:auto}
+  .proof-media,.proof-media.web{min-height:280px}
+  .proof-media.mobile{min-height:460px}
+}
+
 </style>
 <style id="refined-2026">
 :root{
@@ -271,6 +294,24 @@ body{background:var(--bg);color:var(--text)}
 <section class="case-section"><h2>What I designed</h2>
 <p>I broke large, dense screens into clearer tasks and grouped information around what advisers were actually trying to do. In some places the new experience has more screens than the old one. That was deliberate. Fewer screens are not always simpler when one screen is trying to do too much.</p>
 </section>
+
+
+<div class="proof-block">
+  <div class="proof-grid">
+    <figure class="proof-card wide">
+      <div class="proof-media web"><img src="assets/adviser-hub/system-map.png" alt="Large mapping board used to understand existing Adviser Hub investment flows"></div>
+      <figcaption class="proof-caption"><h3>Understanding the existing system</h3><p>I mapped existing screens and flows before deciding what should stay, change or go.</p></figcaption>
+    </figure>
+    <figure class="proof-card">
+      <div class="proof-media web"><img src="assets/adviser-hub/client-details.png" alt="Redesigned Adviser Hub client details screen"></div>
+      <figcaption class="proof-caption"><h3>Client details</h3><p>Information is grouped around what advisers need to understand and do.</p></figcaption>
+    </figure>
+    <figure class="proof-card">
+      <div class="proof-media web"><img src="assets/adviser-hub/invest-flow.png" alt="Adviser Hub invest withdraw or transfer workflow"></div>
+      <figcaption class="proof-caption"><h3>Investment workflow</h3><p>A dense legacy task broken into a clearer flow without losing the underlying rules.</p></figcaption>
+    </figure>
+  </div>
+</div>
 
 <section class="case-section"><h2>Where it landed</h2>
 <p>The redesign gives the Adviser Hub a clearer structure for investment and insurance work and a better base for future changes. This is ongoing work, so for me the main value is that we are no longer adding new features on top of a system nobody fully understands.</p>
